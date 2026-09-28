@@ -24,8 +24,9 @@ export function Nav() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[var(--cream)] via-[var(--cream)]/85 to-transparent" />
         <nav
-          className="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-5 sm:px-10"
+          className="relative mx-auto flex max-w-[1400px] items-center justify-between px-5 py-5 sm:px-10"
           aria-label="Main navigation"
         >
           <Link

@@ -1,33 +1,41 @@
-# fibel. — Personal Portfolio
+# fibel. — Ngang Fibel Awah
 
-Portfolio of **Ngang Fibel Awah** — full-stack developer, data scientist & creative technologist based in Bamenda, Cameroon, working worldwide.
+Personal portfolio website — full-stack developer, data scientist & creative technologist based in Bamenda, Cameroon, working worldwide.
 
 ## Stack
 
-- React 19 + TypeScript + Vite
+- React 19 + TypeScript
+- Vite 7
 - Tailwind CSS 3
-- react-router v7
-- All project visuals are code-drawn (pure CSS/divs) — no image assets
+- react-router (hash routing, static-host friendly)
+- Inter Tight / Instrument Serif via Google Fonts
 
 ## Pages
 
-- `/` — hero, featured builds, craft sections
-- `/about` — story, off the clock, experience & credentials
-- `/works` — filterable project index
+- `/` — hero, featured work, craft strips
+- `/#/works` — filterable project archive (Web · Bots & Automation · Mobile)
+- `/#/about` — story, off the clock, experience & credentials
 
-## Run it
+## Develop
 
 ```bash
 npm install
-npm run dev      # local dev
-npm run build    # production build -> dist/
-npm run preview  # preview the build
+npm run dev
 ```
 
-## Contact
+## Build
 
-- Email: Ngangfibel@gmail.com
-- GitHub: [@ngangfibs](https://github.com/ngangfibs)
-- X: [@NGANGFIBEL](https://x.com/NGANGFIBEL)
-- LinkedIn: [ngang-fibel](https://www.linkedin.com/in/ngang-fibel)
-- Telegram: [t.me/Ngangfibs](https://t.me/Ngangfibs)
+```bash
+npm run build   # outputs to dist/
+```
+
+The build uses `base: './'` and hash routing, so `dist/` can be hosted on any static host (GitHub Pages, Netlify, a bucket) with no server rewrites.
+
+## Edit content
+
+- Projects: `src/data/projects.ts`
+- Experience & bio: `src/pages/About.tsx`
+- Social links & footer: `src/components/Footer.tsx`
+- Project "screenshots" are code-drawn UI sketches in `src/components/Mock.tsx` — no image assets to break.
+
+© Ngang Fibel Awah
